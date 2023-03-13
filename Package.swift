@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "YunoAntifraudOpenpay",
-            targets: ["YunoAntifraudOpenpay"]),
+            targets: ["YunoAntifraudOpenpay", "OpenpaKit"]),
     ],
     targets: [
         .binaryTarget(
