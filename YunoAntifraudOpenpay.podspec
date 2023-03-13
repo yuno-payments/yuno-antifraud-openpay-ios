@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'YunoAntifraudOpenpay'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'OpenPay antifraud by Yuno'
 
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc          = true
 
-  s.vendored_frameworks = 'YunoAntifraudOpenpay.xcframework'
+  s.vendored_frameworks = 'YunoAntifraudOpenpay.xcframework', 'OpenpayKit.xcframework'
   
   s.frameworks = 'UIKit'
   s.frameworks = 'Combine'
