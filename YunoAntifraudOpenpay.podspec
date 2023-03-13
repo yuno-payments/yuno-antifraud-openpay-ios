@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'YunoAntifraudOpenpay'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'OpenPay antifraud by Yuno'
 
   s.description      = <<-DESC
@@ -19,7 +19,17 @@ Pod::Spec.new do |s|
 
   s.requires_arc          = true
 
-  s.vendored_frameworks = 'YunoAntifraudOpenpay.xcframework', 'OpenpayKit.xcframework'
+  # script to unzip the xcframework downloaded from the OpenPay repo
+  s.prepare_command = <<-CMD
+    curl -L -o OpenpayKit.xcframework.zip https://github.com/open-pay/openpay-swift-ios/releases/download/3.1.0/OpenpayKit.xcframework.zip && \
+    unzip OpenpayKit.xcframework.zip && \
+    rm OpenpayKit.xcframework.zip
+    CMD
+  # add the dependency  
+  # s.vendored_frameworks = 'OpenpayKit.xcframework'
+
+  
+  s.vendored_frameworks = 'OpenpayKit.xcframework', 'YunoAntifraudOpenpay.xcframework'
   
   s.frameworks = 'UIKit'
   s.frameworks = 'Combine'
