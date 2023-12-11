@@ -13,6 +13,11 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
+            name: "YunoAntifraudCybersource",
+            url: "https://github.com/yuno-payments/yuno-antifraud-openpay-ios/releases/download/0.0.4/YunoAntifraudCybersource.xcframework.zip",
+            checksum: "6641a4ac3e2312836d9fa6a347bdc4bd1264ca374bd90b92bfd23b4c2d99f972"
+        ),
+        .binaryTarget(
             name: "RLTMXBehavioralBiometrics",
             url: "https://github.com/yuno-payments/yuno-antifraud-openpay-ios/releases/download/0.0.4/RLTMXBehavioralBiometrics.xcframework.zip",
             checksum: "03d909378ca132cd401737baed3a0f6eeb02893ecb3c0e750172782a52de7148"
