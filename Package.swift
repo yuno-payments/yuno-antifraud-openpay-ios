@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "YunoAntifraudCybersource",
-            targets: ["YunoAntifraudCybersource"])
+            targets: ["YunoAntifraudCybersource", "RLTMXBehavioralBiometrics", "RLTMXProfiling", "RLTMXProfilingConnections"])
     ],
     targets: [
         .binaryTarget(
