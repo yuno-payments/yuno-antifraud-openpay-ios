@@ -9,6 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "YunoAntifraudCybersource",
+            type: .dynamic,
             targets: ["YunoAntifraudCybersource", "RLTMXBehavioralBiometrics", "RLTMXProfiling", "RLTMXProfilingConnections"])
     ],
     targets: [
