@@ -29,7 +29,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "RLTMXProfilingConnections",
-            url: "https://github.com/yuno-payments/yuno-openpay-openpay-ios/releases/download/0.0.4/RLTMXProfilingConnections.xcframework.zip",
+            url: "https://github.com/yuno-payments/yuno-antifraud-openpay-ios/releases/download/0.0.4/RLTMXProfilingConnections.xcframework.zip",
             checksum: "4495b69492a0040687b3fdf8580a4ac4f9abb289344609fdcf445fd72c4c20b2"
         )
     ]
