@@ -1,25 +1,31 @@
 // swift-tools-version: 5.6
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "YunoAntifraudOpenpay",
-    defaultLocalization: "en",
+    name: "YunoAntifraudCybersource",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "YunoAntifraudOpenpay",
-            targets: ["YunoAntifraudOpenpay", "OpenpayKit"]),
+            name: "YunoAntifraudCybersource",
+            targets: ["YunoAntifraudCybersource"])
     ],
     targets: [
         .binaryTarget(
-            name: "YunoAntifraudOpenpay",
-            url: "https://github.com/yuno-payments/yuno-antifraud-openpay-ios/releases/download/0.0.3/YunoAntifraudOpenpay.xcframework.zip",
-            checksum: "bf72627b9cf9499621f68dca86e7b42a6c663476d6946ba7aa0478d9712cca7a"
+            name: "RLTMXBehavioralBiometrics",
+            url: "https://github.com/yuno-payments/yuno-antifraud-openpay-ios/releases/download/0.0.4/RLTMXBehavioralBiometrics.xcframework.zip",
+            checksum: "03d909378ca132cd401737baed3a0f6eeb02893ecb3c0e750172782a52de7148"
         ),
         .binaryTarget(
-            name: "OpenpayKit",
-            url: "https://github.com/open-pay/openpay-swift-ios/releases/download/3.2.0/OpenpayKit.xcframework.zip",
-            checksum: "a70869c996b1512e9d5167628d30c4a686dab3c743a8cd85117a194a781b3ae6"
+            name: "RLTMXProfiling",
+            url: "https://github.com/yuno-payments/yuno-antifraud-openpay-ios/releases/download/0.0.4/RLTMXProfiling.xcframework.zip",
+            checksum: "db80aeca9bfae28139b5e1bc6c944db6164e4ff359b244d1b82d85d5d76c3424"
+        ),
+        .binaryTarget(
+            name: "RLTMXProfilingConnections",
+            url: "https://github.com/yuno-payments/yuno-openpay-riskified-ios/releases/download/0.0.4/RLTMXProfilingConnections.xcframework.zip",
+            checksum: "4495b69492a0040687b3fdf8580a4ac4f9abb289344609fdcf445fd72c4c20b2"
         )
     ]
 )
