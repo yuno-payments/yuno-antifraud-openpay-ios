@@ -16,7 +16,7 @@ let package = Package(
         .binaryTarget(
             name: "YunoAntifraudCybersource",
             url: "https://github.com/yuno-payments/yuno-antifraud-openpay-ios/releases/download/0.0.4/YunoAntifraudCybersource.xcframework.zip",
-            checksum: "6641a4ac3e2312836d9fa6a347bdc4bd1264ca374bd90b92bfd23b4c2d99f972"
+            checksum: "d8cf0c9e0471fea0a08daaa6aa907d188746d46b75bc0ef01f53f9453af8e3eb"
         ),
         .binaryTarget(
             name: "RLTMXBehavioralBiometrics",
